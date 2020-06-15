@@ -62,7 +62,7 @@ Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&ut
 
 1. Set up the `SENTRY_DSN` environment variable as described above.
 2. Save your Sentry Organization slug inside the `SENTRY_ORG` and your project slug inside the `SENTRY_PROJECT` environment variables.
-3. Create an auth token in Sentry. The recommended way to do this is by creating a new internal integration for your organization. To do so, go into Settings > Developer Settings > New internal integration. After the integration is created, copy the Token.
+3. Create an auth token in Sentry. The recommended way to do this is by creating a new internal integration for your organization. To do so, go into Settings > Developer Settings > New internal integration. Give the integration Read & Write permission to the project. After the integration is created, copy the Token.
 4. Save the token inside the `SENTRY_AUTH_TOKEN` environment variable.
 
 > **Note:** Sourcemap upload is disabled in development mode using the `NODE_ENV` environment variable. To change this behaviour, remove the `NODE_ENV === 'production'` check from your `next.config.js` file.
